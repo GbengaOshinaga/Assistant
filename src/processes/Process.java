@@ -5,6 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Abstract class for process
+ * @author Gbenga Oshinaga
+ *
+ */
 public abstract class Process {
 
 	private static Properties props = new Properties();
@@ -19,6 +24,10 @@ public abstract class Process {
 		this.text = text;
 	}
 
+	/**
+	 * Loads props if empty and returns it
+	 * @return props
+	 */
 	public static Properties getProps() {
 		if (props.isEmpty()) {
 			try {
@@ -34,5 +43,10 @@ public abstract class Process {
 		return props;
 	}
 
+	/**
+	 * All subclasses override this method to provide an implementation
+	 * for responding to the input from the user
+	 * @return response
+	 */
 	public abstract Object execute();
 }

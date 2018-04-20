@@ -5,7 +5,11 @@ import java.util.Scanner;
 import application.Application;
 
 
-
+/**
+ * Entry point class
+ * @author Gbenga Oshinaga
+ *
+ */
 public class Main {
 
 	/**

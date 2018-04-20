@@ -5,14 +5,23 @@ import helpers.Task;
 import processes.Process;
 import processes.ProcessFactory;
 
+/**
+ * Main application class
+ * @author Gbenga Oshinaga
+ *
+ */
 public class Application {
 	
 	public Application() {
 	}
 
-	// Text entered by user
 	private String text = "";
 	
+	/**
+	 * Accepts and analyzers input from user
+	 * @param input
+	 * @return the output from the assistant
+	 */
 	public Object assistant(String input) {
 		this.text = input.toLowerCase();
 		Enum<Task> task = Analyzer.analyze(this.text);

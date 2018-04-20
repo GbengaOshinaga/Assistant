@@ -2,6 +2,11 @@ package analyzer;
 
 import helpers.Task;
 
+/**
+ * Analyzes text entered by the user
+ * @author Gbenga Oshinaga
+ *
+ */
 public class Analyzer {
 
 	/**
