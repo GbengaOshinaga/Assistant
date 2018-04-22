@@ -1,6 +1,6 @@
-package processes;
+package main.processes;
 
-import helpers.Task;
+import main.helpers.Task;
 
 /**
  * Factory class for process

@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "provider": "Oxford University Press"
+  },
+  "results": [
+    {
+      "id": "goat",
+      "language": "en",
+      "lexicalEntries": [
+        {
+          "derivatives": [
+            {
+              "id": "goatlike",
+              "text": "goatlike"
+            }
+          ],
+          "entries": [
+            {
+              "etymologies": [
+                "Old English gāt ‘nanny goat’, of Germanic origin; related to Dutch geit and German Geiss, also to Latin haedus ‘kid’"
+              ],
+              "grammaticalFeatures": [
+                {
+                  "text": "Singular",
+                  "type": "Number"
+                }
+              ],
+              "homographNumber": "000",
+              "senses": [
+                {
+                  "definitions": [
+                    "a hardy domesticated ruminant mammal that has backward-curving horns and (in the male) a beard. It is kept for its milk and meat, and noted for its lively behaviour."
+                  ],
+                  "domains": [
+                    "Mammal"
+                  ],
+                  "id": "m_en_gbus0419580.007",
+                  "notes": [
+                    {
+                      "text": "Capra hircus, family Bovidae, descended from the wild bezoar",
+                      "type": "technicalNote"
+                    }
+                  ],
+                  "short_definitions": [
+                    "domesticated horned mammal"
+                  ],
+                  "subsenses": [
+                    {
+                      "crossReferenceMarkers": [
+                        "See also mountain goat"
+                      ],
+                      "crossReferences": [
+                        {
+                          "id": "mountain_goat",
+                          "text": "mountain goat",
+                          "type": "see also"
+                        }
+                      ],
+                      "definitions": [
+                        "a wild mammal related to the goat, such as the ibex."
+                      ],
+                      "domains": [
+                        "Mammal"
+                      ],
+                      "id": "m_en_gbus0419580.011",
+                      "short_definitions": [
+                        "wild mammal related to goat"
+                      ]
+                    },
+                    {
+                      "definitions": [
+                        "the zodiacal sign Capricorn or the constellation Capricornus."
+                      ],
+                      "domains": [
+                        "Astronomy",
+                        "Astrology"
+                      ],
+                      "id": "m_en_gbus0419580.012",
+                      "notes": [
+                        {
+                          "text": "\"the Goat\"",
+                          "type": "wordFormNote"
+                        }
+                      ],
+                      "short_definitions": [
+                        "zodiacal sign Capricorn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "a lecherous man."
+                  ],
+                  "id": "m_en_gbus0419580.016",
+                  "short_definitions": [
+                    "lecherous man"
+                  ],
+                  "thesaurusLinks": [
+                    {
+                      "entry_id": "goat",
+                      "sense_id": "t_en_gb0006410.003"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "a stupid person; a fool"
+                  ],
+                  "examples": [
+                    {
+                      "text": "just for once, stop acting the goat"
+                    }
+                  ],
+                  "id": "m_en_gbus0419580.018",
+                  "regions": [
+                    "British"
+                  ],
+                  "registers": [
+                    "informal"
+                  ],
+                  "short_definitions": [
+                    "stupid person"
+                  ],
+                  "thesaurusLinks": [
+                    {
+                      "entry_id": "goat",
+                      "sense_id": "t_en_gb0006410.002"
+                    }
+                  ]
+                },
+                {
+                  "definitions": [
+                    "a scapegoat."
+                  ],
+                  "id": "m_en_gbus0419580.020",
+                  "regions": [
+                    "US"
+                  ],
+                  "short_definitions": [
+                    "scapegoat"
+                  ]
+                }
+              ]
+            }
+          ],
+          "language": "en",
+          "lexicalCategory": "Noun",
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/goat_gb_1.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "ɡəʊt"
+            }
+          ],
+          "text": "goat"
+        },
+        {
+          "entries": [
+            {
+              "grammaticalFeatures": [
+                {
+                  "text": "Abbreviation",
+                  "type": "Residual"
+                }
+              ],
+              "homographNumber": "001",
+              "senses": [
+                {
+                  "definitions": [
+                    "(especially of a sports player) greatest of all time"
+                  ],
+                  "examples": [
+                    {
+                      "text": "no one can deny his GOAT status, but he can't win forever"
+                    },
+                    {
+                      "text": "that movie was GOAT"
+                    },
+                    {
+                      "text": "excellent defensive play from the GOAT"
+                    }
+                  ],
+                  "id": "m_en_gbus0419590.003",
+                  "regions": [
+                    "US"
+                  ],
+                  "registers": [
+                    "informal"
+                  ],
+                  "short_definitions": [
+                    "greatest of all time"
+                  ]
+                }
+              ]
+            }
+          ],
+          "language": "en",
+          "lexicalCategory": "Residual",
+          "pronunciations": [
+            {
+              "audioFile": "http://audio.oxforddictionaries.com/en/mp3/goat_gb_1.mp3",
+              "dialects": [
+                "British English"
+              ],
+              "phoneticNotation": "IPA",
+              "phoneticSpelling": "ɡəʊt"
+            }
+          ],
+          "text": "GOAT"
+        }
+      ],
+      "type": "headword",
+      "word": "goat"
+    }
+  ]
+}

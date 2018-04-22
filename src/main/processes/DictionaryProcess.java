@@ -1,22 +1,7 @@
 /**
  * 
  */
-package processes;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-
-import javax.net.ssl.SSLHandshakeException;
-
-import com.google.gson.Gson;
-
-import dictionarymodel.DictionaryModel;
-import dictionarymodel.Entry;
-import dictionarymodel.LexicalEntry;
-import dictionarymodel.Result;
-import dictionarymodel.Sense;
-import dictionarymodel.Subsense;
+package main.processes;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -26,6 +11,19 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.Properties;
+
+import javax.net.ssl.SSLHandshakeException;
+
+import com.google.gson.Gson;
+
+import main.dictionarymodel.DictionaryModel;
+import main.dictionarymodel.Entry;
+import main.dictionarymodel.LexicalEntry;
+import main.dictionarymodel.Result;
+import main.dictionarymodel.Sense;
+import main.dictionarymodel.Subsense;
 
 /**
  * Process for responding to dictionary requests
@@ -100,10 +98,14 @@ public class DictionaryProcess extends Process {
    */
   private String getWord(String statement) {
     String word = "";
-    String[] splitStatement = statement.split(" ");
+    String[] splitStatement = statement.split("\\s+");
     
     if (statement.contains("define")) {
-      word = splitStatement[splitStatement.length - 1];
+      for (int i = 0; i<splitStatement.length - 1; i++) {
+        if (splitStatement[i].equals("define")) {
+          word = splitStatement[i + 1];
+        }
+      }
     }
     
     if (statement.contains("definition") && 
@@ -113,6 +115,10 @@ public class DictionaryProcess extends Process {
           word = splitStatement[i+2];
         }
       }
+    }
+    
+    if (word.contains("?")) {
+      word = word.replace("?", "");
     }
     
     return word;

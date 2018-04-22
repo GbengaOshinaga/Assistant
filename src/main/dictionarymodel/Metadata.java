@@ -1,5 +1,5 @@
 
-package dictionarymodel;
+package main.dictionarymodel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

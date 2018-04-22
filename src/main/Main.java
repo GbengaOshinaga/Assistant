@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-import application.Application;
+import main.application.Application;
 
 
 /**

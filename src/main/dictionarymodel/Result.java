@@ -1,5 +1,5 @@
 
-package dictionarymodel;
+package main.dictionarymodel;
 
 import java.util.ArrayList;
 import java.util.List;

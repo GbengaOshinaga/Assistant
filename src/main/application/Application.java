@@ -1,9 +1,9 @@
-package application;
+package main.application;
 
-import analyzer.Analyzer;
-import helpers.Task;
-import processes.Process;
-import processes.ProcessFactory;
+import main.analyzer.Analyzer;
+import main.helpers.Task;
+import main.processes.Process;
+import main.processes.ProcessFactory;
 
 /**
  * Main application class

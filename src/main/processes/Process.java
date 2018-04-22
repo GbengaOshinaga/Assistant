@@ -1,4 +1,4 @@
-package processes;
+package main.processes;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

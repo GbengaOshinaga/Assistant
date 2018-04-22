@@ -1,6 +1,6 @@
-package analyzer;
+package main.analyzer;
 
-import helpers.Task;
+import main.helpers.Task;
 
 /**
  * Analyzes text entered by the user
