@@ -21,12 +21,15 @@ public class Main {
 		Application app = new Application();
 		String input = "";
 		System.out.println("Hello, how can I help you?");
-		while (!input.equals("bye")) {
+		while (true) {
 			input = in.nextLine();
+			if (input.equalsIgnoreCase("bye")) {
+			  System.out.println("Bye!");
+			  in.close();
+			  System.exit(0);
+			}
 			System.out.println(app.assistant(input));
 		}
-		in.close();
-		System.exit(0);
 	}
 
 }
