@@ -1,6 +1,6 @@
 package main.processes;
 
-import main.helpers.Task;
+import main.constants.Task;
 
 /**
  * Factory class for process
@@ -18,6 +18,6 @@ public class ProcessFactory {
 		if (task == Task.DICTIONARY) {
 			return DictionaryProcess.getInstance();
 		} 
-		return null;
+		return ConversationProcess.getInstance();
 	}
 }

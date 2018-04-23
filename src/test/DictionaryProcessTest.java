@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -22,6 +21,7 @@ class DictionaryProcessTest {
   @Test
   void shouldReturnWord() {
     DictionaryProcess process = DictionaryProcess.getInstance();
+    @SuppressWarnings("rawtypes")
     Class[] parameters = {String.class};
     try {
       Method method = process.getClass().getDeclaredMethod("getWord", parameters);
@@ -42,6 +42,7 @@ class DictionaryProcessTest {
   @Test
   void shouldReturnDefinitions() {
     DictionaryProcess process = DictionaryProcess.getInstance();
+    @SuppressWarnings("rawtypes")
     Class[] parameters = {String.class};
     try {
       Method method = process.getClass().getDeclaredMethod("getDefinitions", parameters);

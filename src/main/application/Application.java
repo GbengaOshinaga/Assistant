@@ -1,7 +1,7 @@
 package main.application;
 
 import main.analyzer.Analyzer;
-import main.helpers.Task;
+import main.constants.Task;
 import main.processes.Process;
 import main.processes.ProcessFactory;
 
