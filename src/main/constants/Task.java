@@ -1,4 +1,4 @@
-package main.helpers;
+package main.constants;
 
 /**
  * Enum of values describing task that can be performed by the assistant

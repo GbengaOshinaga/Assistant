@@ -34,18 +34,18 @@ public class DictionaryProcess extends Process {
 
 	private final String URL = "https://od-api.oxforddictionaries.com/api/v1";
 
-	private final String LANG = "en";
+	private final String lang = "en";
 
-	private String APP_ID;
+	private String appId;
 
-	private String KEY;
+	private String key;
 
 	private static final DictionaryProcess INSTANCE = new DictionaryProcess();
 
 	private DictionaryProcess() {
 		Properties props = super.getProps();
-		this.APP_ID = props.getProperty("DICTIONARY_APP_ID");
-		this.KEY = props.getProperty("DICTIONARY_KEY");
+		this.appId = props.getProperty("DICTIONARY_APP_ID");
+		this.key = props.getProperty("DICTIONARY_KEY");
 	}
 
 	/**
@@ -66,10 +66,10 @@ public class DictionaryProcess extends Process {
     String word = getWord(this.getText());
     String response = "";
     try {
-      URLConnection conn = new URL(URL + "/entries/" + LANG + "/" + word + "/definitions").openConnection();
+      URLConnection conn = new URL(URL + "/entries/" + lang + "/" + word + "/definitions").openConnection();
       conn.addRequestProperty("Accept", "application/json");
-      conn.addRequestProperty("app_id", APP_ID);
-      conn.addRequestProperty("app_key", KEY);
+      conn.addRequestProperty("app_id", appId);
+      conn.addRequestProperty("app_key", key);
 
       BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
