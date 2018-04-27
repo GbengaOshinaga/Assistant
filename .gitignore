@@ -1,3 +1,4 @@
 /bin/
 .DS_Store
-/src/config/assistant.properties
+src/main/java/config/assistant.properties
+/target/
