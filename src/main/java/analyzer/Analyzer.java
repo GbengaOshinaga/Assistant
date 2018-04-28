@@ -19,6 +19,9 @@ public class Analyzer {
 		if (text.contains("define") || text.contains("definition")) {
 			return Task.DICTIONARY;
 		}
+		if (text.contains("wiki")) {
+		  return Task.WIKI;
+		}
 		return Task.CONVERSATION;
 	}
 }

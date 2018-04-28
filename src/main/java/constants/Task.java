@@ -6,5 +6,5 @@ package constants;
  *
  */
 public enum Task {
-	SEARCH, DICTIONARY, CONVERSATION;
+	SEARCH, DICTIONARY, WIKI, CONVERSATION;
 }
