@@ -60,8 +60,12 @@ public class WikiIntroProcess extends Process {
       JsonObject pageId = jsonObject.getAsJsonObject("query").getAsJsonObject("pages");
       Object[] pageIdArray = pageId.keySet().toArray();
       result = pageId.getAsJsonObject(pageIdArray[0].toString()).get("extract").toString();
-      if (result.length() == 0) {
+      
+      if (result.length() < 3) {
         return "I didn't get any text for " + title.replace("%20", " ");
+      }
+      if (result.endsWith(":\"")) {
+        return "Please be specific about the " + title + " you're looking for";
       }
     } catch (IOException e) {
       return "An error occurred, you are most likely not connected to the internet";
@@ -82,6 +86,10 @@ public class WikiIntroProcess extends Process {
     String title = "";
     if (splitStatement[0].equals("wiki")) {
       for(int i = 1; i<splitStatement.length; i++){
+        title += splitStatement[i].substring(0,1).toUpperCase() + splitStatement[i].substring(1) + " ";
+      }
+    } else if (splitStatement[splitStatement.length-1].equals("wiki")) {
+      for(int i = 0; i<splitStatement.length-1; i++) {
         title += splitStatement[i].substring(0,1).toUpperCase() + splitStatement[i].substring(1) + " ";
       }
     }

@@ -66,7 +66,7 @@ class DictionaryProcessTest {
     try {
       URLConnection conn = new URL(apiUrl).openConnection();
       PowerMockito.whenNew(URLConnection.class).withAnyArguments().thenReturn(conn);
-      File file = new File("./src/test/mock/goat.json");
+      File file = new File("./src/test/java/mock/goat.json");
       InputStream stream = new FileInputStream(file);
       PowerMockito.when(conn.getInputStream()).thenReturn(stream);
     } catch (Exception e) {
