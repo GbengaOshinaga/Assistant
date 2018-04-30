@@ -18,6 +18,9 @@ public class ProcessFactory {
 		if (task == Task.DICTIONARY) {
 			return DictionaryProcess.getInstance();
 		} 
+		if (task == Task.WIKI) {
+		  return WikiIntroProcess.getInstance();
+		}
 		return ConversationProcess.getInstance();
 	}
 }
